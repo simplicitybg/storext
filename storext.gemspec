@@ -18,10 +18,11 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "virtus"
-  s.add_dependency "activerecord", [">= 4.0", "< 8"]
+  s.add_dependency "activerecord", [">= 7.0", "< 8.1"]
 
   s.add_development_dependency "pg"
   s.add_development_dependency "rspec"
   s.add_development_dependency "database_cleaner"
   s.add_development_dependency "rails"
+  s.add_development_dependency "psych", "< 4"
 end
